@@ -21,24 +21,24 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
                           TABLE OF CONTENTS
 
 1. Introduction
-   1.1. Description
-   1.2. News, Comments, and Bug Reports.
-   1.3. License   
+  1. Description
+  2. News, Comments, and Bug Reports.
+  3. License   
 
 2. Compile GibbsLDA++
-   2.1. Download
-   2.2. Compiling
+  1. Download
+  2. Compiling
 
 3. How to Use GibbsLDA++
-   3.1. Command Line & Input Parameters
-      3.1.1. Parameter Estimation from Scratch
-      3.1.2. Parameter Estimation from a Previously Estimated Model
-      3.1.3. Inference for Previously Unseen (New) Data
-   3.2 Input Data Format
-   3.3. Outputs
-      3.3.1. Outputs of Gibbs Sampling Estimation of GibbsLDA++
-      3.3.2. Outputs of Gibbs Sampling Inference for Previously Unseen Data
-   3.4. Case Study
+  1. Command Line & Input Parameters
+    1. Parameter Estimation from Scratch
+    2. Parameter Estimation from a Previously Estimated Model
+    3. Inference for Previously Unseen (New) Data
+  2. Input Data Format
+  3. Outputs
+    1. Outputs of Gibbs Sampling Estimation of GibbsLDA++
+    2. Outputs of Gibbs Sampling Inference for Previously Unseen Data
+    4. Case Study
 
 4. Links, Acknowledgements, and References
 
@@ -64,14 +64,14 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
   The release of GibbsLDA++ is useful for the following (potential) application
   areas):
 
-    + Information Retrieval (analyzing semantic/latent topic/concept structures
-      of large text collection for a more intelligent information searching.
-    + Document Classification/Clustering, Document Summarization, and Text/Web
-      Data Mining community in general.
-    + Collaborative Filtering
-    + Content-based Image Clustering, Object Recognition, and other applications
-      of Computer Vision in general.
-    + Other potential applications in biological data.
+* Information Retrieval (analyzing semantic/latent topic/concept structures of
+  large text collection for a more intelligent information searching.
+* Document Classification/Clustering, Document Summarization, and Text/Web
+  Data Mining community in general.
+* Collaborative Filtering
+* Content-based Image Clustering, Object Recognition, and other applications
+  of Computer Vision in general.
+* Other potential applications in biological data.
 
 
 ##1.2. News, Comments, and Bug Reports.
