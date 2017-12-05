@@ -103,8 +103,8 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
   You can find and download document, source code, and case studies of
   GibbsLDA++ at:
 
-  http://gibbslda.sourceforge.net/
-  http://sourceforge.net/projects/gibbslda
+  * http://gibbslda.sourceforge.net/
+  * http://sourceforge.net/projects/gibbslda
 
 
 ## 2.2. Compiling
@@ -143,7 +143,7 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
   directory. We use this for parameter estimation and inference for new data.
 
 
-## 3.1.1. Parameter Estimation from Scratch
+###3.1.1 Parameter Estimation from Scratch
 
     $ lda -est [-alpha <double>] [-beta <double>] [-ntopics <int>] \
       [-niters <int>] [-savestep <int>] [-twords <int>] -dfile <string>
@@ -186,7 +186,7 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
         input data format.
 
 
-## 3.1.2. Parameter Estimation from a Previously Estimated Model
+###3.1.2 Parameter Estimation from a Previously Estimated Model
 
     $ lda -estc -dir <string> -model <string> [-niters <int>] -savestep <int>] \
       [-twords <int>]
@@ -219,7 +219,7 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
         above.
 
 
-## 3.1.3. Inference for Previously Unseen (New) Data
+###3.1.3 Inference for Previously Unseen (New) Data
 
     $ lda -inf -dir <string> -model <string> [-niters <int>] [-twords <int>] \
       -dfile <string>
@@ -285,7 +285,7 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
 ## 3.3 Outputs
 
 
-## 3.3.1. Outputs of Gibbs Sampling Estimation of GibbsLDA++
+###3.3.1 Outputs of Gibbs Sampling Estimation of GibbsLDA++
 
   Outputs of Gibbs sampling estimation of GibbsLDA++ include the following files:
 
@@ -336,7 +336,7 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
   integer IDs of words/terms inside instead of text strings.
 
 
-## 3.3.2. Outputs of Gibbs Sampling Inference for Previously Unseen Data
+###3.3.2 Outputs of Gibbs Sampling Inference for Previously Unseen Data
 
   The outputs of GibbsLDA++ inference are almost the same as those of the estimation
   process except that the contents of those files are of the new data. The
