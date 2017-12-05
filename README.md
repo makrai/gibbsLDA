@@ -45,10 +45,10 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
 ****************************************************************************
 
 
-#1. Introduction
+# 1. Introduction
 
 
-##1.1. Description
+## 1.1. Description
 
   GibbsLDA++ is a C/C++ implementation of Latent Dirichlet Allocation (LDA) 
   using Gibbs Sampling technique for parameter estimation and inference. It is 
@@ -74,12 +74,12 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
 * Other potential applications in biological data.
 
 
-##1.2. News, Comments, and Bug Reports.
+## 1.2. News, Comments, and Bug Reports.
 
   We highly appreciate any suggestion, comment, and bug report.
 
 
-##1.3. License
+## 1.3. License
 
   GibbsLDA++ is a free software; you can redistribute it and/or modify it under 
   the terms of the GNU General Public License as published by the Free Software
@@ -95,10 +95,10 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
   Place, Suite 330, Boston, MA 02111-1307 USA.
 
 
-#2. Compile GibbsLDA++
+# 2. Compile GibbsLDA++
 
 
-##2.1. Download
+## 2.1. Download
 
   You can find and download document, source code, and case studies of 
   GibbsLDA++ at:
@@ -107,7 +107,7 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
   http://sourceforge.net/projects/gibbslda
 
 
-##2.2. Compiling 
+## 2.2. Compiling 
 
   On Unix/Linux/Cygwin/MinGW environments:
 
@@ -134,16 +134,16 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
     $ make all
 
 
-#3. How to Use GibbsLDA++
+# 3. How to Use GibbsLDA++
 
 
-##3.1. Command Line & Input Parameters
+## 3.1. Command Line & Input Parameters
 
   After compiling GibbsLDA++, we have "lda" executable file in "GibbsLDA++/src" 
   directory. We use this for parameter estimation and inference for new data.
 
 
-##3.1.1. Parameter Estimation from Scratch
+## 3.1.1. Parameter Estimation from Scratch
 
     $ lda -est [-alpha <double>] [-beta <double>] [-ntopics <int>] \
       [-niters <int>] [-savestep <int>] [-twords <int>] -dfile <string>
@@ -186,7 +186,7 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
         input data format.
 
 
-##3.1.2. Parameter Estimation from a Previously Estimated Model
+## 3.1.2. Parameter Estimation from a Previously Estimated Model
  
     $ lda -estc -dir <string> -model <string> [-niters <int>] -savestep <int>] \
       [-twords <int>]
@@ -219,7 +219,7 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
         above.
 
 
-##3.1.3. Inference for Previously Unseen (New) Data
+## 3.1.3. Inference for Previously Unseen (New) Data
 
     $ lda -inf -dir <string> -model <string> [-niters <int>] [-twords <int>] \
       -dfile <string>
@@ -252,7 +252,7 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
         data format.
 
 
-##3.2 Input Data Format
+## 3.2 Input Data Format
 
   Both data for training/estimating the model and new data (i.e., previously 
   unseen data) have the same format as follows:
@@ -282,10 +282,10 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
   estimating with GibbsLDA++.
 
 
-##3.3 Outputs
+## 3.3 Outputs
 
 
-##3.3.1. Outputs of Gibbs Sampling Estimation of GibbsLDA++
+## 3.3.1. Outputs of Gibbs Sampling Estimation of GibbsLDA++
 
   Outputs of Gibbs sampling estimation of GibbsLDA++ include the following files:
 
@@ -336,14 +336,14 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
   integer IDs of words/terms inside instead of text strings.
 
 
-##3.3.2. Outputs of Gibbs Sampling Inference for Previously Unseen Data
+## 3.3.2. Outputs of Gibbs Sampling Inference for Previously Unseen Data
 
   The outputs of GibbsLDA++ inference are almost the same as those of the estimation
   process except that the contents of those files are of the new data. The 
   <model_name> is exactly the same as the filename of the input (new) data.
 
 
-##3.4. Case Study
+## 3.4. Case Study
 
   For example, we want to estimate a LDA model for a collection of documents stored
   in file called "models/casestudy/trndocs.dat" and then use that model to do 
@@ -386,10 +386,10 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
      + newdocs.dat.twords
 
 
-#4. Links, Acknowledgements, and References 
+# 4. Links, Acknowledgements, and References 
 
 
-##4.1. Links
+## 4.1. Links
 
   Here are some pointers to other implementations of LDA
   
@@ -406,7 +406,7 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
     http://chasen.org/~daiti-m/dist/lda/
 
 
-##4.2. References
+## 4.2. References
 
   - [Andrieu03] C. Andrieu, N.D. Freitas, A. Doucet, and M. Jordan: "An 
     introduction to MCMC for machine learning", Machine Learning (2003).
@@ -434,7 +434,7 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
     retrieval", Proc. of SIGIR (2006).
 
 
-##4.3. Acknowledgements
+## 4.3. Acknowledgements
 
   Our code is based on the Java code of Gregor Heinrich
   (http://www.arbylon.net/projects/LdaGibbsSampler.java) and the theoretical
