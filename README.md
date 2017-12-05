@@ -1,7 +1,7 @@
 # gibbsLDA
 my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by by Xuan-Hieu Phan and Cam-Tu Nguyen. Original page: http://gibbslda.sourceforge.net/
 
-****************************************************************************
+`****************************************************************************`
 
                               GibbsLDA++
        A C/C++ Implementation of Latent Dirichlet Allocation (LDA)
@@ -15,7 +15,7 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
                 Graduate School of Information Sciences
                           Tohoku University
 
-****************************************************************************
+`****************************************************************************`
 
 
                           TABLE OF CONTENTS
@@ -42,7 +42,7 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
 
 4. Links, Acknowledgements, and References
 
-****************************************************************************
+`****************************************************************************`
 
 
 # 1. Introduction
@@ -287,53 +287,53 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
 
 ### 3.3.1 Outputs of Gibbs Sampling Estimation of GibbsLDA++
 
-  Outputs of Gibbs sampling estimation of GibbsLDA++ include the following files:
+Outputs of Gibbs sampling estimation of GibbsLDA++ include the following files:
 
-    <model_name>.others
-    <model_name>.phi
-    <model_name>.theta
-    <model_name>.tassign
-    <model_name>.twords
+<model_name>.others
+<model_name>.phi
+<model_name>.theta
+<model_name>.tassign
+<model_name>.twords
 
-  in which:
+in which:
 
-    + <model_name>:
-       is the name of a LDA model corresponding to the time step it was saved
-       on the hard disk. For example, the name of the model was saved at the Gibbs
-       sampling iteration 400th will be "model-00400". Similarly, the model was
-       saved at the 1200th iteration is "model-01200". The model name of the last
-       Gibbs sampling iteration is "model-final".
++ <model_name>:
+is the name of a LDA model corresponding to the time step it was saved
+on the hard disk. For example, the name of the model was saved at the Gibbs
+sampling iteration 400th will be "model-00400". Similarly, the model was
+saved at the 1200th iteration is "model-01200". The model name of the last
+Gibbs sampling iteration is "model-final".
 
-    + <model_name>.others:
-       This file contains some parameters of LDA model, such as:
-          alpha=?
-          beta=?
-          ntopics=? # i.e., number of topics)
-          ndocs=? # i.e., number of documents)
-          nwords=? # i.e., the vocabulary size)
-          liter=? # i.e., the Gibbs sampling iteration at which the model was saved)
++ <model_name>.others:
+This file contains some parameters of LDA model, such as:
+alpha=?
+beta=?
+ntopics=? # i.e., number of topics)
+ndocs=? # i.e., number of documents)
+nwords=? # i.e., the vocabulary size)
+liter=? # i.e., the Gibbs sampling iteration at which the model was saved)
 
-    + <model_name>.phi:
-       This file contains the word-topic distributions,
-       i.e., p(word_w | topic_t). Each line is a topic, each column is a word in
-       the vocabulary
++ <model_name>.phi:
+This file contains the word-topic distributions,
+i.e., p(word_w | topic_t). 
+Each line is a topic, each column is a word in the vocabulary
 
-    + <model_name>.theta:
-       This file contains the topic-document distributions,
-       i.e., p(topic_t | document_m). Each line is a document and each column is
-       a topic.
++ <model_name>.theta:
+This file contains the topic-document distributions,
+i.e., p(topic_t | document_m). 
+Each line is a document and each column is a topic.
 
-    + <model_name>.tassign:
-       This file contains the topic assignments for words in training data. Each
-       line is a document that consists of a list of <word_ij>:<topic of word_ij>
++ <model_name>.tassign:
+This file contains the topic assignments for words in training data. Each
+line is a document that consists of a list of <word_ij>:<topic of word_ij>
 
-    + <model_file>.twords:
-       This file contains <twords> most likely words of each topic. <twords> is
-       specified in the command line (see Sections 3.1.1 and 3.1.2).
++ <model_file>.twords:
+This file contains <twords> most likely words of each topic. <twords> is
+specified in the command line (see Sections 3.1.1 and 3.1.2).
 
-  GibbsLDA++ also saves a file called "wordmap.txt" that contains the maps between
-  words and word's IDs (integer). This is because GibbsLDA++ works directly with
-  integer IDs of words/terms inside instead of text strings.
+GibbsLDA++ also saves a file called "wordmap.txt" that contains the maps between
+words and word's IDs (integer). This is because GibbsLDA++ works directly with
+integer IDs of words/terms inside instead of text strings.
 
 
 ### 3.3.2 Outputs of Gibbs Sampling Inference for Previously Unseen Data
@@ -379,11 +379,11 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
         -twords 20 -dfile newdocs.dat
 
   Now, look into the casestudy directory, we can see the outputs of the inferences:
-     + newdocs.dat.others
-     + newdocs.dat.phi
-     + newdocs.dat.tassign
-     + newdocs.dat.theta
-     + newdocs.dat.twords
+  + newdocs.dat.others
+  + newdocs.dat.phi
+  + newdocs.dat.tassign
+  + newdocs.dat.theta
+  + newdocs.dat.twords
 
 
 # 4. Links, Acknowledgements, and References
