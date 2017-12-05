@@ -289,11 +289,13 @@ my fork of GibbsLDA++: A C/C++ Implementation of Latent Dirichlet Allocation by 
 
 Outputs of Gibbs sampling estimation of GibbsLDA++ include the following files:
 
+```
 <model_name>.others
 <model_name>.phi
 <model_name>.theta
 <model_name>.tassign
 <model_name>.twords
+```
 
 in which:
 
